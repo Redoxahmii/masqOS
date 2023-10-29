@@ -4,7 +4,6 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
-import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import BgSwitch from "@/components/bg-switch";
 
@@ -40,12 +39,10 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className=" relative flex flex-col h-screen">
+          <div className=" relative flex flex-col ">
             <Navbar />
             <BgSwitch />
-            <main className="container mx-auto max-w-7xl flex-grow z-10">
-              {children}
-            </main>
+            <main className="container  flex-grow z-10">{children}</main>
           </div>
         </Providers>
       </body>

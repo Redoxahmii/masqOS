@@ -13,10 +13,6 @@ export const siteConfig = {
       href: "/docs",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
       label: "Download",
       href: "/download",
     },
@@ -35,10 +31,6 @@ export const siteConfig = {
 		href: "/docs",
 	  },
 	  {
-		label: "Pricing",
-		href: "/pricing",
-	  },
-	  {
 		label: "Download",
 		href: "/download",
 	  },
@@ -48,7 +40,7 @@ export const siteConfig = {
 	  },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
+    github: "https://github.com/redoxahmii",
     twitter: "https://twitter.com/getnextui",
     docs: "https://nextui.org",
     discord: "https://discord.gg/9b6yyZKmH4",
