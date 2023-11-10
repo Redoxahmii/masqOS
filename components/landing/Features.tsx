@@ -1,12 +1,14 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import img from "@/public/check.jpg";
 import Image from "next/image";
 import laptop2 from "../../public/laptop2.png";
+import secondMock from "../../public/laptop.png";
+import thirdMock from "../../public/3rdMockup.png";
+import clsx from "clsx";
 const Features = () => {
   return (
-    <div className="mt-32">
+    <div className="pt-32">
       <div className="flex items-center justify-center">
         <span className="font-semibold text-5xl uppercase text-center">
           Features
@@ -57,16 +59,16 @@ const Card = ({ card }: CardProps) => {
       viewport={{ amount: 0.5 }}
       className=" w-[95vw] h-[90vh] rounded-xl gap-20 flex items-center justify-center"
     >
-      <div className=" max-w-lg flex flex-col items-center justify-center w-full">
-        <h1 className=" text-white dark:text-default-foreground text-center text-3xl font-bold mb-5">
+      <div className=" max-w-lg flex flex-col w-full">
+        <h1 className=" text-white dark:text-default-foreground text-3xl font-bold mb-5">
           {card.title}
         </h1>
-        <p className="text-white dark:text-default-foreground text-center">
+        <p className="text-white dark:text-default-foreground">
           {card.subtitle}
         </p>
       </div>
-      {card.id === 1 ? (
-        <div className="max-w-4xl pt-20 -mr-20">
+      {card.id === 1 && (
+        <motion.div className="max-w-4xl pt-20 -mr-20">
           <Image
             className="rounded-3xl"
             src={card.url}
@@ -74,9 +76,21 @@ const Card = ({ card }: CardProps) => {
             width={800}
             height={800}
           />
+        </motion.div>
+      )}
+      {card.id === 2 && (
+        <div className="max-w-2xl">
+          <Image
+            className="rounded-3xl"
+            src={card.url}
+            alt="Picture of the author"
+            width={600}
+            height={600}
+          />
         </div>
-      ) : (
-        <div className="max-w-4xl pt-20">
+      )}
+      {card.id === 3 && (
+        <div className="max-w-4xl">
           <Image
             className="rounded-3xl"
             src={card.url}
@@ -100,16 +114,16 @@ const cards = [
     id: 1,
   },
   {
-    url: img,
-    color: "#5E1721",
+    url: secondMock,
+    color: "#0465cd",
     title: "Smaller is sometimes better",
     subtitle:
       "MASQ OS is light, fast, efficient, least resource intensive with core packages and complete functionality. It is smaller in size up to 2 GB of setup file and requires just 5-8 GBs hard disk space for installation, 1 GB – 2 GB of RAM, at least 1.0 GHz of x64 and x32 bit architecture of CPU of any generation ranging from 3rd Generation and onwards Intel and various Advanced Micro Devices (AMD) processors.",
     id: 2,
   },
   {
-    url: img,
-    color: "#5E4721",
+    url: thirdMock,
+    color: "#e61635",
     title: "A new way to use your old hardware",
     subtitle:
       "In daily usage we encountered many laptops/desktops that are being discarded due to futility and legacy hardware. Keeping an eye on day-to-day problems that people encounter while using common Operating Systems like Linux distributions (Ubuntu, Zorin and Manjaro) and Windows because the hardware tends to become obsolete after a specific time and becomes useless so why not MASQ OS?",

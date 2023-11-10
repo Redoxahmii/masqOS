@@ -42,7 +42,7 @@ export default function RootLayout({
           <div className=" relative flex flex-col ">
             <Navbar />
             <BgSwitch />
-            <main className="container  flex-grow z-10">{children}</main>
+            <main className="flex-grow z-10">{children}</main>
           </div>
         </Providers>
       </body>
