@@ -57,18 +57,18 @@ const Card = ({ card }: CardProps) => {
     <motion.div
       whileInView={{ backgroundColor: `${card.color}` }}
       viewport={{ amount: 0.5 }}
-      className=" w-[95vw] h-[90vh] rounded-xl gap-20 flex items-center justify-center"
+      className=" w-[95vw] h-[90vh] rounded-xl lg:gap-20 lg:flex-row flex-col flex items-center justify-center"
     >
-      <div className=" max-w-lg flex flex-col w-full">
-        <h1 className=" text-white dark:text-default-foreground text-3xl font-bold mb-5">
+      <div className=" max-w-lg flex items-center justify-center flex-col w-full">
+        <h1 className=" text-white dark:text-default-foreground lg:text-3xl text-xl font-bold mb-5">
           {card.title}
         </h1>
-        <p className="text-white dark:text-default-foreground">
+        <p className="text-white text-center lg:text-left lg:text-medium text-sm dark:text-default-foreground">
           {card.subtitle}
         </p>
       </div>
       {card.id === 1 && (
-        <motion.div className="max-w-4xl pt-20 -mr-20">
+        <motion.div className="max-w-4xl lg:pt-20 lg:-mr-20 scale-80 hover:scale-90 transition-all duration-300">
           <Image
             className="rounded-3xl"
             src={card.url}
@@ -79,9 +79,9 @@ const Card = ({ card }: CardProps) => {
         </motion.div>
       )}
       {card.id === 2 && (
-        <div className="max-w-2xl">
+        <div className="max-w-2xl scale-90 hover:scale-100 transition-transform">
           <Image
-            className="rounded-3xl"
+            className="lg:mt-0 mt-14"
             src={card.url}
             alt="Picture of the author"
             width={600}
@@ -90,7 +90,7 @@ const Card = ({ card }: CardProps) => {
         </div>
       )}
       {card.id === 3 && (
-        <div className="max-w-4xl">
+        <div className="max-w-4xl transition-transform hover:scale-110">
           <Image
             className="rounded-3xl"
             src={card.url}

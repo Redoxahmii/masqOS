@@ -1,9 +1,9 @@
-"use client";
 import { Button } from "@nextui-org/button";
 import { Card, CardHeader, CardFooter } from "@nextui-org/card";
 import Image from "next/image";
 import laptop from "@/public/FirstMock.png";
 import DownloadModal from "@/components/DownloadModal";
+import Link from "next/link";
 
 export default function DownloadPage() {
   return (
@@ -11,7 +11,6 @@ export default function DownloadPage() {
       <Card
         shadow="lg"
         isFooterBlurred
-        isPressable
         className="w-full lg:h-[500px] text-left col-span-12 sm:col-span-7"
       >
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
@@ -37,9 +36,15 @@ export default function DownloadPage() {
           </div>
           <div className="flex gap-2">
             <DownloadModal />
-            <Button radius="full" color="primary">
-              Download
-            </Button>
+            <Link
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://drive.google.com/file/d/1WR6ko_H2ZyH3V9GyfgWaWsKg-9RdAyYr/view"
+            >
+              <Button radius="full" color="primary">
+                Download
+              </Button>
+            </Link>
           </div>
         </CardFooter>
       </Card>

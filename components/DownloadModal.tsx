@@ -9,25 +9,22 @@ import {
   useDisclosure,
 } from "@nextui-org/modal";
 import { Button } from "@nextui-org/button";
+import Link from "next/link";
 
 export default function DownloadModal() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
-    <>
+    <React.Fragment>
       <Button
+        suppressHydrationWarning
         onPress={onOpen}
         radius="full"
         variant="flat"
-        className=" text-white"
+        className="text-white"
       >
         System Requirements
       </Button>
-      <Modal
-        backdrop="blur"
-        as="div"
-        isOpen={isOpen}
-        onOpenChange={onOpenChange}
-      >
+      <Modal backdrop="blur" isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
           {(onClose) => (
             <>
@@ -35,33 +32,29 @@ export default function DownloadModal() {
                 System Requirements
               </ModalHeader>
               <ModalBody>
-                <div>
-                  <p>
-                    ISO size:{" "}
-                    <span className="text-primary font-bold">2 GB</span>{" "}
-                  </p>
-                  <p>
-                    Storage:{" "}
-                    <span className="text-primary font-bold">6 GB</span>{" "}
-                  </p>
-                  <p>
-                    RAM: <span className="text-primary font-bold">1-2 GB</span>{" "}
-                  </p>
-                  <p>
-                    Processor:{" "}
-                    <span className="text-primary font-bold">1.0 GHz</span>
-                  </p>
-                  <p>
-                    Architecture:{" "}
-                    <span className="text-primary font-bold">x64 and x32</span>
-                  </p>
-                  <p>
-                    Generation:{" "}
-                    <span className="text-primary font-bold">
-                      3rd Generation and onwards
-                    </span>
-                  </p>
-                </div>
+                <p>
+                  ISO size: <span className="text-primary font-bold">2 GB</span>{" "}
+                </p>
+                <p>
+                  Storage: <span className="text-primary font-bold">6 GB</span>{" "}
+                </p>
+                <p>
+                  RAM: <span className="text-primary font-bold">1-2 GB</span>{" "}
+                </p>
+                <p>
+                  Processor:{" "}
+                  <span className="text-primary font-bold">1.0 GHz</span>
+                </p>
+                <p>
+                  Architecture:{" "}
+                  <span className="text-primary font-bold">x64 and x32</span>
+                </p>
+                <p>
+                  Generation:{" "}
+                  <span className="text-primary font-bold">
+                    3rd Generation and onwards
+                  </span>
+                </p>
               </ModalBody>
               <ModalFooter>
                 <Button
@@ -72,14 +65,20 @@ export default function DownloadModal() {
                 >
                   Close
                 </Button>
-                <Button color="primary" radius="full" onPress={onClose}>
-                  Download
-                </Button>
+                <Link
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1WR6ko_H2ZyH3V9GyfgWaWsKg-9RdAyYr/view"
+                >
+                  <Button color="primary" radius="full">
+                    Download
+                  </Button>
+                </Link>
               </ModalFooter>
             </>
           )}
         </ModalContent>
       </Modal>
-    </>
+    </React.Fragment>
   );
 }

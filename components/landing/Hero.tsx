@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import laptop from "@/public/SecondMock2.png";
+// import { useRouter } from "next/router";
 export default function Hero() {
   return (
     <>
@@ -54,35 +55,37 @@ export default function Hero() {
             </Link>{" "}
             and the{" "}
             <Link
-              href="https://antixlinux.com/"
+              href="https://artixlinux.org/"
               isExternal
               color="secondary"
               showAnchorIcon
               className="text-sm lg:text-base"
             >
-              AntiX
+              ArtiX
             </Link>{" "}
             Kernel, designed to be <br className="hidden lg:block" />{" "}
             Lightweight, Lightning-Fast, and Ultra-Secure.{" "}
           </motion.p>
-          <Button
-            className="mt-2 hidden lg:block"
-            color="primary"
-            variant="shadow"
-            size="lg"
-            radius="full"
-          >
-            Download MASQ OS
-          </Button>
-          <Button
-            className="mt-2 lg:hidden"
-            color="primary"
-            variant="shadow"
-            size="md"
-            radius="full"
-          >
-            Download MASQ OS
-          </Button>
+          <Link href="download">
+            <Button
+              className="mt-2 hidden lg:block"
+              color="primary"
+              variant="shadow"
+              size="lg"
+              radius="full"
+            >
+              Download MASQ OS
+            </Button>
+            <Button
+              className="mt-2 lg:hidden"
+              color="primary"
+              variant="shadow"
+              size="md"
+              radius="full"
+            >
+              Download MASQ OS
+            </Button>
+          </Link>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
