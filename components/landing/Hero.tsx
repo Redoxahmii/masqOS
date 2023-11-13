@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import laptop from "@/public/SecondMock2.png";
-// import { useRouter } from "next/router";
 export default function Hero() {
   return (
     <>
@@ -90,7 +89,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ amount: 0.5 }}
-            className=" w-[90vw] ml-20 flex"
+            className=" lg:w-[90vw] w-[60vw] flex items-center justify-center"
           >
             <Image src={laptop} alt="laptop" />
           </motion.div>

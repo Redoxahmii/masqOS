@@ -5,12 +5,11 @@ import Image from "next/image";
 import laptop2 from "../../public/laptop2.png";
 import secondMock from "../../public/laptop.png";
 import thirdMock from "../../public/3rdMockup.png";
-import clsx from "clsx";
 const Features = () => {
   return (
     <div className="pt-32">
       <div className="flex items-center justify-center">
-        <span className="font-semibold text-5xl uppercase text-center">
+        <span className="font-semibold lg:text-5xl text-3xl text-center">
           Features
         </span>
       </div>
@@ -68,7 +67,7 @@ const Card = ({ card }: CardProps) => {
         </p>
       </div>
       {card.id === 1 && (
-        <motion.div className="max-w-4xl lg:pt-20 lg:-mr-20 scale-80 hover:scale-90 transition-all duration-300">
+        <motion.div className="max-w-4xl lg:mb-0 -mb-36 lg:pt-20 lg:-mr-20 scale-80 hover:scale-90 transition-all duration-300">
           <Image
             className="rounded-3xl"
             src={card.url}

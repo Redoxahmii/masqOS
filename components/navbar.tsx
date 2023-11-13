@@ -17,13 +17,7 @@ import NextLink from "next/link";
 import clsx from "clsx";
 
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-  Logo,
-} from "@/components/icons";
+import { GithubIcon, HeartFilledIcon, Logo } from "@/components/icons";
 
 export const Navbar = () => {
   return (
@@ -75,6 +69,7 @@ export const Navbar = () => {
             Sponsor
           </Button>
         </NavbarItem>
+        <NavbarMenuToggle className="lg:hidden block" />
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
