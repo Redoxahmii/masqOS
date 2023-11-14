@@ -7,7 +7,7 @@ export const viewport: Viewport = {
 };
 export const metadata: Metadata = {
   title: {
-    default: "Documentation MASQ-OS",
+    default: "Documentation",
     template: "%s - Docs",
   },
   description: "Installation and documentation for MASQ-OS.",
