@@ -2,9 +2,9 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
-import laptop2 from "../../public/laptop2.png";
-import secondMock from "../../public/laptop.png";
-import thirdMock from "../../public/3rdMockup.png";
+import laptop2 from "@/public/mockups/Second.png";
+import secondMock from "../../public/mockups/First.png";
+import thirdMock from "../../public/mockups/Fourth.png";
 const Features = () => {
   return (
     <div className="pt-32">

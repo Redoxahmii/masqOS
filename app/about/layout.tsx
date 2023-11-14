@@ -1,15 +1,17 @@
-import { Metadata } from "next";
-
+import { Metadata, Viewport } from "next";
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
+};
 export const metadata: Metadata = {
   title: {
     default: "About MASQ-OS",
     template: "%s - About",
   },
   description: "About MASQ-OS",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
+
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",

@@ -1,7 +1,7 @@
 import { Button } from "@nextui-org/button";
 import { Card, CardHeader, CardFooter } from "@nextui-org/card";
 import Image from "next/image";
-import laptop from "@/public/FirstMock.png";
+import laptop from "@/public/mockups/Last.png";
 import DownloadModal from "@/components/DownloadModal";
 import Link from "next/link";
 

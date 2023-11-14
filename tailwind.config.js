@@ -12,5 +12,9 @@ module.exports = {
     extend: {},
   },
   darkMode: "class",
-  plugins: [nextui(), require("tailwindcss-animated")],
+  plugins: [
+    nextui(),
+    require("tailwindcss-animated"),
+    require("@tailwindcss/typography"),
+  ],
 };

@@ -1,0 +1,30 @@
+
+# Dual booting MASQ OS with Windows
+
+To install MASQ OS alongside Windows and other operating systems, follow these steps:
+
+  
+
+First, open Disk Management on your Windows and shrink the partition to create the space you need for the new OS (at least 20GB). The shrunken space will appear as unallocated. Close Disk Management when done.
+
+  
+
+1. Create a bootable USB with the ISO using Rufus. Open Rufus, select the MASQ ISO and your USB, then click next. Be sure to choose 'Write in DD Mode' (this step is crucial).
+
+2. Boot your PC using the USB drive. Use your PC's boot menu key (for Dell it's F12, for HP it's F2 or ESC) and select your USB.
+
+3. From the GRUB boot menu, select 'Install MASQ'.
+
+4. When the live OS has loaded, open the 'Install MASQ' icon on the desktop and enter the password 'masq' to launch the OS install wizard.
+
+5. Follow the instructions provided by the installer.
+
+6. For the partitioning guide in the installer: Select manual partitioning and hit 'Next'. Choose the unallocated space you shrank earlier in Windows and create two partitions:
+
+- A 300 MB partition in FAT32 format with the mount point /boot/EFI. Enable the boot flag.
+
+- A main root partition using the remaining space. This is where the OS will be installed. The mount point should be / and the filesystem should be ext4.
+
+- It will look like the highlighted partitions in the screenshot.
+
+7. Press 'Enter', then input your username and password to install.

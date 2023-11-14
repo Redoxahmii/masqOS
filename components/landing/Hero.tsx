@@ -5,7 +5,7 @@ import { Link } from "@nextui-org/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import laptop from "@/public/SecondMock2.png";
+import laptop from "@/public/mockups/Third.png";
 export default function Hero() {
   return (
     <>
@@ -54,15 +54,15 @@ export default function Hero() {
             </Link>{" "}
             and the{" "}
             <Link
-              href="https://artixlinux.org/"
+              href="https://wiki.gentoo.org/wiki/OpenRC"
               isExternal
               color="secondary"
               showAnchorIcon
               className="text-sm lg:text-base"
             >
-              ArtiX
+              OpenRC
             </Link>{" "}
-            Kernel, designed to be <br className="hidden lg:block" />{" "}
+            init system, designed to be <br className="hidden lg:block" />{" "}
             Lightweight, Lightning-Fast, and Ultra-Secure.{" "}
           </motion.p>
           <Link href="download">
