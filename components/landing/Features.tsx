@@ -94,6 +94,7 @@ const Card = ({ card }: CardProps) => {
             src={card.url}
             placeholder="blur"
             alt="Laptop"
+            priority
             width={1000}
             height={1000}
           />
