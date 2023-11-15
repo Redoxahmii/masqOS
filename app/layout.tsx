@@ -38,12 +38,12 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-sans antialiased scroll-smooth scrollbar-none",
           fontSans.className
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className=" relative flex flex-col ">
+          <div className=" relative flex flex-col">
             <Navbar />
             <BgSwitch />
             <main className="flex-grow z-10">{children}</main>

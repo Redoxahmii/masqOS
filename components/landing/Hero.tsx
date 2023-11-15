@@ -21,17 +21,17 @@ export default function Hero() {
             className="text-center leading-[1] inline-block"
           >
             <motion.div variants={HomeAnimation}>
-              <h1 className="tracking-tight inline text-[2.5rem] lg:text-[5.5rem]">
+              <h1 className="tracking-tight inline text-[2.5rem] md:text-[5.5rem]">
                 Experience the <br />
               </h1>
             </motion.div>
             <motion.div variants={HomeAnimation}>
-              <h1 className="tracking-tight inline text-[2.5rem] lg:text-[5.5rem]">
+              <h1 className="tracking-tight inline text-[2.5rem] md:text-[5.5rem]">
                 Future of <br />
               </h1>
             </motion.div>
             <motion.div variants={HomeAnimation}>
-              <h1 className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] text-[2.5rem] lg:text-[5.5rem] bg-clip-text text-transparent bg-gradient-to-b ">
+              <h1 className="tracking-tight inline from-[#FF1CF7] to-[#b249f8] text-[2.5rem] md:text-[5.5rem] bg-clip-text text-transparent bg-gradient-to-b ">
                 Linux
               </h1>
             </motion.div>
@@ -39,7 +39,7 @@ export default function Hero() {
 
           <motion.p
             variants={HomeAnimation}
-            className="text-center text-sm lg:text-base"
+            className="text-center text-sm md:text-base"
           >
             Future of Computing with MASQ-OS, a Free and Open-Source Operating
             System. Built on the Rock-Solid Foundation of{" "}
@@ -48,7 +48,7 @@ export default function Hero() {
               href="https://archlinux.org/"
               color="secondary"
               showAnchorIcon
-              className="text-sm lg:text-base"
+              className="text-sm md:text-base"
             >
               Arch
             </Link>{" "}
@@ -58,16 +58,16 @@ export default function Hero() {
               isExternal
               color="secondary"
               showAnchorIcon
-              className="text-sm lg:text-base"
+              className="text-sm md:text-base"
             >
               OpenRC
             </Link>{" "}
-            init system, designed to be <br className="hidden lg:block" />{" "}
+            init system, designed to be <br className="hidden md:block" />{" "}
             Lightweight, Lightning-Fast, and Ultra-Secure.{" "}
           </motion.p>
           <Link href="download">
             <Button
-              className="mt-2 hidden lg:block"
+              className="mt-2 hidden md:block"
               color="primary"
               variant="shadow"
               size="lg"
@@ -76,7 +76,7 @@ export default function Hero() {
               Download MASQ OS
             </Button>
             <Button
-              className="mt-2 lg:hidden"
+              className="mt-2 md:hidden"
               color="primary"
               variant="shadow"
               size="md"
@@ -89,7 +89,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ amount: 0.5 }}
-            className=" lg:w-[90vw] w-[60vw] flex items-center justify-center"
+            className=" md:w-[80vw] w-[60vw] flex items-center justify-center"
           >
             <Image src={laptop} alt="laptop" />
           </motion.div>

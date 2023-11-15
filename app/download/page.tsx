@@ -22,11 +22,12 @@ export default function DownloadPage() {
           width={500}
           height={500}
           quality={100}
+          placeholder="blur"
           className="z-0 w-full h-full object-cover hover:scale-105 transition-all duration-300 ease-in-out"
           src={laptop}
         />
         <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
-          <div className="flex flex-grow  gap-2 items-center">
+          <div className="flex flex-grow gap-2 items-center">
             <div className="flex flex-col">
               <p className="text-white/80 lg:text-medium text-tiny">
                 We currently only have a single version as this is an ongoing

@@ -26,7 +26,7 @@ export default function downloadLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className=" h-[91vh] w-full flex items-center justify-center">
+    <section className="flex h-[calc(100vh-4rem)] items-center justify-center">
       <div>{children}</div>
     </section>
   );

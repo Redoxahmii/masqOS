@@ -1,6 +1,6 @@
 {
-  "name": "next-app-template",
-  "version": "0.0.1",
+  "name": "masqos",
+  "version": "1.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p 5173",
@@ -47,6 +47,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10"
+    "@tailwindcss/typography": "^0.5.10",
+    "tailwind-scrollbar": "^3.0.5"
   }
 }

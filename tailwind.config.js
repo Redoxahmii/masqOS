@@ -16,5 +16,6 @@ module.exports = {
     nextui(),
     require("tailwindcss-animated"),
     require("@tailwindcss/typography"),
+    require("tailwind-scrollbar"),
   ],
 };

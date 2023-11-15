@@ -25,7 +25,7 @@ export default function AboutLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className=" h-[91vh] w-full flex items-center justify-center">
+    <section className=" h-[calc(100vh-4rem)] w-full flex items-center justify-center">
       <div>{children}</div>
     </section>
   );
