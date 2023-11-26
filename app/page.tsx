@@ -1,3 +1,4 @@
+import Performance from "@/components/landing/Performance";
 import Features from "@/components/landing/Features";
 import Hero from "@/components/landing/Hero";
 import React from "react";
@@ -10,6 +11,9 @@ export default function Home() {
       </section>
       <section>
         <Features />
+      </section>
+      <section>
+        <Performance />
       </section>
     </>
   );
