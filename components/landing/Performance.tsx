@@ -11,7 +11,7 @@ import {
 
 export default function Performance() {
   return (
-    <div className="flex px-10 w-1">
+    <div className="flex px-10">
       <div className="w-1/2">
         <motion.div
           initial={{
