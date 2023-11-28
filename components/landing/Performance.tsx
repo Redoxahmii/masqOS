@@ -23,17 +23,17 @@ export default function Performance() {
           viewport={{
             amount: 1,
           }}
-          className="sticky w-[40vw] h-32 mt-10 top-96"
+          className="sticky w-[40vw] h-36 top-96"
         >
-          <div className="w-full max-w-lg">
-            <h1 className="text-4xl tracking-tighter font-semibold">
+          <div className="w-full max-w-xl">
+            <h1 className="lg:text-4xl text-2xl tracking-tighter font-semibold">
               Performance was measured by benchmarking on popular testing suites
               like Will-It-Scale and OS-Bench
             </h1>
           </div>
         </motion.div>
       </div>
-      <div className="w-[2000px] h-[100vh] bg-gradient-to-b flex relative gap-20 p-5 flex-col">
+      <div className="w-[2000px] h-[100vh] flex relative gap-10 p-5 flex-col">
         <Table
           aria-label="Example static collection table"
           classNames={{
