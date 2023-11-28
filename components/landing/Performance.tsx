@@ -11,7 +11,7 @@ import {
 
 export default function Performance() {
   return (
-    <div className="flex px-10">
+    <div className="flex px-10 mb-24">
       <div className="w-1/2">
         <motion.div
           initial={{
@@ -26,7 +26,7 @@ export default function Performance() {
           className="sticky w-[40vw] h-32 mt-10 top-96"
         >
           <div className="w-full max-w-lg">
-            <h1 className="text-3xl tracking-tighter font-semibold">
+            <h1 className="text-4xl tracking-tighter font-semibold">
               Performance was measured by benchmarking on popular testing suites
               like Will-It-Scale and OS-Bench
             </h1>
@@ -37,7 +37,7 @@ export default function Performance() {
         <Table
           aria-label="Example static collection table"
           classNames={{
-            th: "bg-primary-400 dark:bg-primary text-foreground text-lg",
+            th: "text-sm",
           }}
         >
           <TableHeader>
@@ -115,7 +115,12 @@ export default function Performance() {
             </TableRow>
           </TableBody>
         </Table>
-        <Table aria-label="Example static collection table">
+        <Table
+          aria-label="Example static collection table"
+          classNames={{
+            th: "text-sm",
+          }}
+        >
           <TableHeader>
             <TableColumn>OS Bench</TableColumn>
             <TableColumn>Manjaro</TableColumn>
