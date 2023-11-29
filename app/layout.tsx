@@ -56,7 +56,7 @@ export default function RootLayout({
                 title="Nextjs homepage"
               >
                 <span className="text-default-600">Powered by</span>
-                <p className="text-primary">Nextjs</p>
+                <p className="text-primary">NextJS</p>
               </Link>
             </footer>
           </div>

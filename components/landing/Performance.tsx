@@ -11,7 +11,7 @@ import {
 
 export default function Performance() {
   return (
-    <div className="flex px-10 mb-24">
+    <div className="flex lg:px-10 lg:flex-row lg:gap-40 flex-col mb-24">
       <div className="w-1/2">
         <motion.div
           initial={{
@@ -23,17 +23,17 @@ export default function Performance() {
           viewport={{
             amount: 1,
           }}
-          className="sticky w-[40vw] h-36 top-96"
+          className="sticky w-[40vw] lg:ml-8 ml-0 h-36 top-96"
         >
-          <div className="w-full max-w-xl">
-            <h1 className="lg:text-4xl text-2xl tracking-tighter font-semibold">
+          <div className="lg:w-full w-screen lg:px-0 px-20 lg:max-w-2xl text-center lg:text-left">
+            <h1 className="lg:text-4xl text-3xl tracking-tighter font-semibold">
               Performance was measured by benchmarking on popular testing suites
               like Will-It-Scale and OS-Bench
             </h1>
           </div>
         </motion.div>
       </div>
-      <div className="w-[2000px] h-[100vh] flex relative gap-10 p-5 flex-col">
+      <div className="flex relative gap-10 p-5 flex-col">
         <Table
           aria-label="Example static collection table"
           classNames={{
