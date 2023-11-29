@@ -6,6 +6,7 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import clsx from "clsx";
 import BgSwitch from "@/components/bg-switch";
+import { Link } from "@nextui-org/link";
 
 export const viewport: Viewport = {
   themeColor: [
@@ -47,6 +48,17 @@ export default function RootLayout({
             <Navbar />
             <BgSwitch />
             <main className="flex-grow z-10">{children}</main>
+            <footer className="w-full flex items-center justify-center py-3">
+              <Link
+                isExternal
+                className="flex items-center gap-1 text-current"
+                href="https://nextjs.org/"
+                title="Nextjs homepage"
+              >
+                <span className="text-default-600">Powered by</span>
+                <p className="text-primary">Nextjs</p>
+              </Link>
+            </footer>
           </div>
         </Providers>
       </body>
