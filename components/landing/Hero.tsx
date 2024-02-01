@@ -9,7 +9,7 @@ import laptop from "@/public/mockups/Third.png";
 export default function Hero() {
   return (
     <>
-      <div className=" flex items-center justify-center mt-20">
+      <div className="flex items-center justify-center mt-20">
         <motion.div
           variants={HomeAnimation}
           initial="initial"
@@ -45,25 +45,15 @@ export default function Hero() {
             System. Built on the Rock-Solid Foundation of{" "}
             <Link
               isExternal
-              href="https://archlinux.org/"
+              href="https://www.debian.org/"
               color="secondary"
               showAnchorIcon
               className="text-sm md:text-base"
             >
-              Arch
+              Debian
             </Link>{" "}
-            and the{" "}
-            <Link
-              href="https://wiki.gentoo.org/wiki/OpenRC"
-              isExternal
-              color="secondary"
-              showAnchorIcon
-              className="text-sm md:text-base"
-            >
-              OpenRC
-            </Link>{" "}
-            init system, designed to be <br className="hidden md:block" />{" "}
-            Lightweight, Lightning-Fast, and Ultra-Secure.{" "}
+            designed to be <br className="hidden md:block" /> Ultra-Secure,
+            Lightning-Fast, and Beautiful.{" "}
           </motion.p>
           <Link href="download">
             <Button

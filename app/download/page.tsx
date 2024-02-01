@@ -40,7 +40,7 @@ export default function DownloadPage() {
             <Link
               rel="noopener noreferrer"
               target="_blank"
-              href="https://drive.google.com/file/d/1WR6ko_H2ZyH3V9GyfgWaWsKg-9RdAyYr/view"
+              href="https://drive.google.com/file/d/1POw9UO1kdSz3Z4X3F-U3wR0Z8yrtiV-h/view"
             >
               <Button radius="full" color="primary">
                 Download

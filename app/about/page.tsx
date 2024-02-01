@@ -73,7 +73,7 @@ export default function AboutPage() {
                 name="Qasim Mehmood"
                 description="Kernel Developer"
                 avatarProps={{
-                  src: "https://pps.whatsapp.net/v/t61.24694-24/396602412_302783722517296_7800058457957874100_n.jpg?ccb=11-4&oh=01_AdTRtSOiSgAzBVlRCQtpTQVqLqRYBTiQ2mGbaA6LFYwTxw&oe=655E3A66&_nc_sid=e6ed6c&_nc_cat=108",
+                  src: "https://media-mct1-1.cdn.whatsapp.net/v/t61.24694-24/396602412_302783722517296_7800058457957874100_n.jpg?ccb=11-4&oh=01_AdT7opH6W3LURjTFDXP94YsHG2n5S5saOhgB2okmMDl-8g&oe=65AD5466&_nc_sid=e6ed6c&_nc_cat=108",
                 }}
               />
               <div className="flex justify-around mt-4">

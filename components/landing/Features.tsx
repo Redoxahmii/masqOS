@@ -108,25 +108,25 @@ const cards = [
   {
     url: laptop2,
     color: "#8d70ec",
-    title: "Systemd is Not Always the Answer",
+    title: "Rock Solid Stablity",
     subtitle:
-      "The goal of the project was to create a Distro which was not only fast in all the process times but also fast in booting so it can be comfortably used on a daily basis and for older generation hardware.",
+      "MASQ OS is built on Debian 12 Bookworm, which is the latest stable release of Debian. Debian is known for its stability and security. Debian is the most popular GNU/Linux distribution for servers and desktops. Debian is also the base for many other distributions, including Ubuntu, Knoppix, and Tails.",
     id: 1,
   },
   {
     url: secondMock,
     color: "#0465cd",
-    title: "Smaller is Sometimes Better",
+    title: "Minimalistic meets Elegant",
     subtitle:
-      "MASQ OS is light, fast, efficient, least resource intensive with core packages and complete functionality. It is smaller in size up to 2 GB of setup file and requires just 5-8 GBs hard disk space for installation, 1 GB – 2 GB of RAM, at least 1.0 GHz of x64 and x32 bit architecture of CPU of any generation ranging from 3rd Generation and onwards Intel and various Advanced Micro Devices (AMD) processors.",
+      "MASQ OS is designed to be beautiful and elegant.It is shipped with Gnome 43 with custom wallpapers,widgets and a beautiful spatial desktop setup which is easy to use and intuitive.",
     id: 2,
   },
   {
     url: thirdMock,
     color: "#e61635",
-    title: "An Alternative for Older Hardware",
+    title: "Performance is the key",
     subtitle:
-      "In daily usage we encountered many laptops/desktops that are being discarded due to futility and legacy hardware. Keeping an eye on day-to-day problems that people encounter while using common Operating Systems like Linux distributions (Ubuntu, Zorin and Manjaro) and Windows because the hardware tends to become obsolete after a specific time and becomes useless so why not MASQ OS?",
+      "MASQ OS has been tweaked to provide the best performance that can be squeezed out of a machine. It is designed to be fast and responsive.",
     id: 3,
   },
 ];
