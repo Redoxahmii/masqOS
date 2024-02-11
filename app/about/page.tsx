@@ -73,13 +73,19 @@ export default function AboutPage() {
                 name="Qasim Mehmood"
                 description="Kernel Developer"
                 avatarProps={{
-                  src: "https://media-mct1-1.cdn.whatsapp.net/v/t61.24694-24/396602412_302783722517296_7800058457957874100_n.jpg?ccb=11-4&oh=01_AdT7opH6W3LURjTFDXP94YsHG2n5S5saOhgB2okmMDl-8g&oe=65AD5466&_nc_sid=e6ed6c&_nc_cat=108",
+                  src: "https://avatars.githubusercontent.com/u/16062298?v=4",
                 }}
               />
               <div className="flex justify-around mt-4">
-                <Button isIconOnly variant="faded">
-                  <GithubIcon className="text-default-500" />
-                </Button>
+                <Link
+                  href="https://github.com/qasim799"
+                  rel="nooppener norefferer"
+                  target="_blank"
+                >
+                  <Button isIconOnly variant="faded">
+                    <GithubIcon className="text-default-500" />
+                  </Button>
+                </Link>
                 <Button isIconOnly variant="faded">
                   <LinkedinIcon className="text-default-500" />
                 </Button>

@@ -40,7 +40,7 @@ export default function DownloadPage() {
             <Link
               rel="noopener noreferrer"
               target="_blank"
-              href="https://drive.google.com/file/d/1jGQBy3-4U8hs3Q2oLEZ4-D1-qfEIdsNl/view?usp=sharing"
+              href="https://sourceforge.net/projects/masq-os/files/MASQOS_2024-02-11_1859.iso/download"
             >
               <Button radius="full" color="primary">
                 Download
