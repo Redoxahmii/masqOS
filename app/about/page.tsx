@@ -25,7 +25,7 @@ export default function AboutPage() {
                 classNames={{
                   name: "text-lg font-semibold tracking-tight",
                 }}
-                description="Full Stack Developer"
+                description="Full Stack & Distro Developer"
                 name="Muhammad Ahmed"
                 avatarProps={{
                   src: "https://avatars.githubusercontent.com/u/13983258?v=4",
@@ -71,7 +71,7 @@ export default function AboutPage() {
                   name: "text-lg font-semibold tracking-tight",
                 }}
                 name="Qasim Mehmood"
-                description="Kernel Developer"
+                description="Distro Developer"
                 avatarProps={{
                   src: "https://avatars.githubusercontent.com/u/16062298?v=4",
                 }}
