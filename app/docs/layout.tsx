@@ -11,7 +11,6 @@ export const metadata: Metadata = {
     template: "%s - Docs",
   },
   description: "Installation and documentation for MASQ-OS.",
-
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",

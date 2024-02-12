@@ -46,6 +46,11 @@ export default function DownloadPage() {
                 Download
               </Button>
             </Link>
+            <Link href="/docs">
+              <Button radius="full" color="primary">
+                Install
+              </Button>
+            </Link>
           </div>
         </CardFooter>
       </Card>

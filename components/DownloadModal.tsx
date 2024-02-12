@@ -36,14 +36,14 @@ export default function DownloadModal() {
                   ISO size: <span className="text-primary font-bold">2 GB</span>{" "}
                 </p>
                 <p>
-                  Storage: <span className="text-primary font-bold">6 GB</span>{" "}
+                  Storage: <span className="text-primary font-bold">16 GB</span>{" "}
                 </p>
                 <p>
-                  RAM: <span className="text-primary font-bold">1-2 GB</span>{" "}
+                  RAM: <span className="text-primary font-bold">4 GB</span>{" "}
                 </p>
                 <p>
                   Processor:{" "}
-                  <span className="text-primary font-bold">1.0 GHz</span>
+                  <span className="text-primary font-bold">Atleast 1.0GHz</span>
                 </p>
                 <p>
                   Architecture:{" "}
@@ -52,7 +52,7 @@ export default function DownloadModal() {
                 <p>
                   Generation:{" "}
                   <span className="text-primary font-bold">
-                    3rd Generation and onwards
+                    All AMD and Intel
                   </span>
                 </p>
               </ModalBody>
@@ -68,7 +68,7 @@ export default function DownloadModal() {
                 <Link
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="https://drive.google.com/file/d/1WR6ko_H2ZyH3V9GyfgWaWsKg-9RdAyYr/view"
+                  href="https://sourceforge.net/projects/masq-os/files/MASQOS_2024-02-11_1859.iso/download"
                 >
                   <Button color="primary" radius="full">
                     Download
