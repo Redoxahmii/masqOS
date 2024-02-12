@@ -13,9 +13,9 @@ export default function Home() {
       <section>
         <Features />
       </section>
-      <section>
-        <Performance />
-      </section>
+      {/* <section> */}
+      {/*   <Performance /> */}
+      {/* </section> */}
       <section>
         <Footer />
       </section>
